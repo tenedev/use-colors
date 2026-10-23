@@ -21,8 +21,8 @@ importers:
         specifier: ^25.9.9
         version: 25.9.9
       '@vitest/coverage-v8':
-        specifier: 4.1.10
-        version: 4.1.10(vitest@4.1.10)
+        specifier: 4.1.12
+        version: 4.1.12(vitest@4.1.10)
       echo-banner:
         specifier: ^0.3.0
         version: 0.3.0
@@ -43,7 +43,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: ^4.1.10
-        version: 4.1.10(@types/node@25.9.9)(@vitest/coverage-v8@4.1.10)(vite@7.3.1(@types/node@25.9.9)(jiti@2.6.1)(yaml@2.9.0))
+        version: 4.1.10(@types/node@25.9.9)(@vitest/coverage-v8@4.1.12)(vite@7.3.1(@types/node@25.9.9)(jiti@2.6.1)(yaml@2.9.0))
 
 packages:
   '@babel/helper-string-parser@7.27.1':
@@ -1217,14 +1217,14 @@ packages:
         integrity: sha512-b4e2xxj/yMeT2hNlD6x7zNFiQK2Dlmkb9CQ6v3/1G2RezKN4YS2lcEv8lzGm1mhs4f2lM4yNAMI/zUDBZBBt7w==,
       }
 
-  '@vitest/coverage-v8@4.1.10':
+  '@vitest/coverage-v8@4.1.12':
     resolution:
       {
-        integrity: sha512-IM49HmthevbgAO4anp1hwtoT9wYe59w0LR00gr+eagHE+ZJ5lK4sLPeO0ubgoJcwLk6dehU3R24N+FbEEKDc8g==,
+        integrity: sha512-6S7/iVknKglLAxMFxQGNppBI0iqJS2NgM6FBxavitj7KaDq/vywOWGf6dGu7F2L1Qy0G6S3uTp7aGshHrzK8JA==,
       }
     peerDependencies:
-      '@vitest/browser': 4.1.10
-      vitest: 4.1.10
+      '@vitest/browser': 4.1.12
+      vitest: 4.1.12
     peerDependenciesMeta:
       '@vitest/browser':
         optional: true
@@ -1255,6 +1255,12 @@ packages:
         integrity: sha512-W1HsjSH4MXQ9YfmmhLAoIYf1HRfekQCGngeIgcei6MP5QQGWUe0gkopdZQaVCFO+JDJMrAJGwa5pRpNpvy4P8Q==,
       }
 
+  '@vitest/pretty-format@4.1.12':
+    resolution:
+      {
+        integrity: sha512-XW9O8+Mxx4VpCtkYdMJLZQQwsVryP9wk7cPKDxtXFfwSak6yRh5+2fep/Y0XF/ElBvJHq8bcYdi6aeuai0opZA==,
+      }
+
   '@vitest/runner@4.1.10':
     resolution:
       {
@@ -1277,6 +1283,12 @@ packages:
     resolution:
       {
         integrity: sha512-fy9am/HWxbaGt/Sawrp90vt6Y6jQwf1RX77cz3uwoJwJVMli/e1IEwRPnMNJ7vKfPTwo0diXifkpPvwH9v7nGA==,
+      }
+
+  '@vitest/utils@4.1.12':
+    resolution:
+      {
+        integrity: sha512-Q3awXrwOfEV+qc3WmO5ONyE0yO7Q1gQ9/oyHxGLZ/pl7N3NO/ZztqQwKLuwMkV+CA1JYSIeO3gkHnRDIo4AVaA==,
       }
 
   '@yuku-codegen/binding-darwin-arm64@0.8.0':
@@ -3286,10 +3298,10 @@ snapshots:
     dependencies:
       undici-types: 7.24.6
 
-  '@vitest/coverage-v8@4.1.10(vitest@4.1.10)':
+  '@vitest/coverage-v8@4.1.12(vitest@4.1.10)':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
-      '@vitest/utils': 4.1.10
+      '@vitest/utils': 4.1.12
       ast-v8-to-istanbul: 1.0.4
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
@@ -3298,7 +3310,7 @@ snapshots:
       obug: 2.1.4
       std-env: 4.1.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.10(@types/node@25.9.9)(@vitest/coverage-v8@4.1.10)(vite@7.3.1(@types/node@25.9.9)(jiti@2.6.1)(yaml@2.9.0))
+      vitest: 4.1.10(@types/node@25.9.9)(@vitest/coverage-v8@4.1.12)(vite@7.3.1(@types/node@25.9.9)(jiti@2.6.1)(yaml@2.9.0))
 
   '@vitest/expect@4.1.10':
     dependencies:
@@ -3321,6 +3333,10 @@ snapshots:
     dependencies:
       tinyrainbow: 3.1.0
 
+  '@vitest/pretty-format@4.1.12':
+    dependencies:
+      tinyrainbow: 3.1.0
+
   '@vitest/runner@4.1.10':
     dependencies:
       '@vitest/utils': 4.1.10
@@ -3338,6 +3354,12 @@ snapshots:
   '@vitest/utils@4.1.10':
     dependencies:
       '@vitest/pretty-format': 4.1.10
+      convert-source-map: 2.0.0
+      tinyrainbow: 3.1.0
+
+  '@vitest/utils@4.1.12':
+    dependencies:
+      '@vitest/pretty-format': 4.1.12
       convert-source-map: 2.0.0
       tinyrainbow: 3.1.0
 
@@ -4109,7 +4131,7 @@ snapshots:
       jiti: 2.6.1
       yaml: 2.9.0
 
-  vitest@4.1.10(@types/node@25.9.9)(@vitest/coverage-v8@4.1.10)(vite@7.3.1(@types/node@25.9.9)(jiti@2.6.1)(yaml@2.9.0)):
+  vitest@4.1.10(@types/node@25.9.9)(@vitest/coverage-v8@4.1.12)(vite@7.3.1(@types/node@25.9.9)(jiti@2.6.1)(yaml@2.9.0)):
     dependencies:
       '@vitest/expect': 4.1.10
       '@vitest/mocker': 4.1.10(vite@7.3.1(@types/node@25.9.9)(jiti@2.6.1)(yaml@2.9.0))
@@ -4133,7 +4155,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 25.9.9
-      '@vitest/coverage-v8': 4.1.10(vitest@4.1.10)
+      '@vitest/coverage-v8': 4.1.12(vitest@4.1.10)
     transitivePeerDependencies:
       - msw
 
